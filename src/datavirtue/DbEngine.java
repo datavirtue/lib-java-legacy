@@ -531,7 +531,7 @@ private boolean unicode = false;
         int recs = (int) getNumOfRecs();
         if (recs < 1) return (TableModel) new DefaultTableModel();
         int numFields = currentSchema.getNumFields();
-         if (debug) System.out.println("Num of records: "+recs+" number of Firlds "+numFields);
+        
         // build TableModel with data and headers
 
         Object [] [] data = new Object [recs] [numFields];

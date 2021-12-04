@@ -59,7 +59,7 @@ public static String encrypt(char[] password, String plaintext)
 	
 	byte[] ciphertext = cipher.doFinal(plaintext.getBytes());
 	
-	Base64 encoder = new Base64();
+	org.bouncycastle.util.encoders.Base64 encoder = new org.bouncycastle.util.encoders.Base64();
 	
 	String saltString = new String (encoder.encode(salt));
 	String ciphertextString = new String (encoder.encode(ciphertext));
@@ -87,7 +87,7 @@ public static String encrypt(char[] password, String plaintext)
 	
 	// BASE64Decode the bytes for the salt and the ciphertext
 
-	Base64 decoder = new Base64();
+	org.bouncycastle.util.encoders.Base64 decoder = new org.bouncycastle.util.encoders.Base64();
 	byte[] saltArray = decoder.decode(salt);
 	byte[] ciphertextArray = decoder.decode(ciphertext);
 

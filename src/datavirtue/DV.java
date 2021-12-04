@@ -544,15 +544,13 @@ public class DV	{
         for (int i = 0; i < len; i++) {
             
             a = (String) tm.getValueAt(i,col);
-            //System.out.println(a);
-            if (text.equalsIgnoreCase(a.trim())) {
-             
+            if (text.equalsIgnoreCase(a.trim())) {             
                 al.add(i);             
             }         
         }        
         al.trimToSize();
         
-        if (al.size() > 0) return al;
+        if (al.isEmpty()) return al;
         else return null;
         
     }
