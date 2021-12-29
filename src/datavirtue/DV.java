@@ -690,14 +690,7 @@ public class DV	{
         }
         return "0";*/
     }
-    public static String money (float money) {
-        
-        money = (float)(Math.round(money*100.00f)/100.00f);
-        NumberFormat formatter = new DecimalFormat("#,###,##0.00");
-
-        return formatter.format(money);
-    }
-
+   
     public static String money (double money) {
         //Locale locale = Locale.getDefault();
 

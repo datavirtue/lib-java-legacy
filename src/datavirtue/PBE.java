@@ -4,9 +4,6 @@ import java.security.*;
 import javax.crypto.*;
 import javax.crypto.spec.*;
 import java.util.*;
-import java.util.*;
-import org.bouncycastle.jce.provider.*;
-import org.bouncycastle.util.encoders.*;
 
 
 // This is for BASE64 encoding and decoding
